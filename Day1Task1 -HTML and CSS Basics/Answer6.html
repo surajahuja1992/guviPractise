@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+<style>
+mark {
+  margin:auto;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  
+}
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid black;
+  text-align:center;
+}
+table{
+	table-layout: fixed;
+	width:auto;
+	border: 3px solid black;
+	border-collapse: collapse;
+}
+td{
+	padding-top:10px;
+	padding-right:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+}
+label{
+	font-size:13px;
+}
+.inputText{
+	font-family: 'Alex Brush';
+	font-weight: bold;
+}
+
+</style>
+<body>
+<table>
+<tr>
+<td>
+<form action="/action_page.php">
+	<label style="font-size:22px"><mark><b>Yes! I want to subscribe to Mag-O-Zine</b></mark></label><br><br>
+	
+	<input class="inputText" type="text" id="fname" name="fname" value="John" style="padding-left:10px;">&emsp;
+	<input class="inputText" type="text" id="lname" name="lname" value="Doe" ><br>
+	<label for="fname">First name</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&nbsp;&nbsp;
+	<label for="lname">Last name</label><br>
+	<input class="inputText" type="text" id="address" name="address" value="address" style="width:350px"><br>
+	<label for="address">Address</label><br>
+	<input class="inputText" type="text" id="city" name="city" value="city" style="width:80px">&emsp;&emsp;
+	<input class="inputText" type="text" id="state" name="state" value="state" style="width:50px">&emsp;&emsp;&emsp;
+	<input class="inputText" type="text" id="zip" name="zip" value="zip" style="width:100px"><br>
+	<label for="city">City</label>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+	<label for="state">State</label>&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+	<label for="zip">Zip</label><br><br>
+	<b>
+	<text>Subscribe for:
+	<input type="checkbox" id="1year" name="1year" value="1year">
+	<text for="1year">1 year($19.95)</text>
+	<input type="checkbox" id="2years" name="2years" value="2years">
+	<text for="2years">2 years($35.00)</text><br>
+	<text>Send me more information about:</text><br>
+	<input type="checkbox" id="cZine" name="cZine" value="cZine">
+	<text for="cZine">Computer-Zine</text><br>
+	<input type="checkbox" id="fZine" name="fZine" value="fZine">
+	<text for="fZine">Fishing-Zine</text><br>
+	<input type="checkbox" id="cOZine" name="cOZine" value="cOZine">
+	<text for="cOZine">Cat-O-Zine</text><br>
+	</b>
+	
+</form>
+</td> 
+</tr>
+</table>
+</body>
+</html>
