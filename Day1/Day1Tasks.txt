@@ -1,0 +1,32 @@
+Difference between HTTP1.1 vs HTTP2-->
+<>HTTP/2 was released in 2015 as a major revision to the HTTP/1.1 protocol.HTTP/1.1 was the third version of HTTP and the standard protocol for over 15 years
+<>The response time in HTTP/2 is much faster than that in HTTP/1.1
+<>The headers are sent separately from the body in case of HTTP/2.where in Http/1.1 the method, uri, response codes and protocol versions are passed in the request line. Http/2 introduces the concept of psuedoheaders, placed before all other headers and prefixed with a : to handle these aspects, except protocol version.
+<>HTTP/2 supports binary protocols, queries multiplexing, headers compression, priority and more intelligent packet streaming management which results in faster page loading
+
+http version history-->
+<>HTTP/0.9--Introduced in year 1991. First version which client-server,request-response protocol , the methods support was on;y GET and the response was always a HTML. Connection immidiately terminated post reponse.No headers,no status/error codes and no url's
+<>HTTP/1.0--Introduced in year 1996. Browser-friendly protocol which provided header fields including both request and response. The response not limited to HTML, it had HTTP version number, status code and content type. Methods supported are GET , HEAD and POST.Connection terminated immediately after the response. New connection required for each request
+<>HTTP/1.1--Introduced in year 1997. In common use today. Pipelined connections, chunked transfers, compression/decompression, content negotiations, virtual hosting (a server with a single IP Address hosting multiple domains), faster response and great bandwidth savings by adding cache support. Methods supported are GET , HEAD , POST , PUT , DELETE , TRACE and OPTIONS . COnnection is long lived
+<>HTTP/2--Introduced in year 2000. Supports binary protocols, queries multiplexing, headers compression, priority and more intelligent packet streaming management which results in faster page loading
+
+List 5 difference between Browser JS(console) vs Nodejs-->
+<>In the browser, we are mostly interacting with the DOM, or other Web Platform APIs like Cookies. Those do not exist in Node.js.
+<>We don't have things like document and window in Nodejs that are provided by the browser whereas we dont have APIs that Node.js provides like the filesystem access functionality.
+<>In Nodejs you control the environment unlike in browser where we cant choose what browser the visitors will use.
+<>Nodejs uses the CommonJS module system, where as in the browser we see the ES Modules standard being implemented.
+
+Abstract Working of JS engine(V8).-->
+<>The engine compiles and executes the JS code--handles the call stack--manages the memory heap--handles the garbage collection--provides all the data types, objects and functions
+<>It performs a lexical analysis, breaking down the source into a series of tokens--four JIT processes then analyze and execute the bytecode produced by the parser
+<>Just in Time compiles JS code to native machine code. The ignition interpreter, compiles the JS code and generates non-optimized machine code. On runtime, the machine code is analyzed and re-compiled for optimal performance. This optimization is handled by the TurboFan and Crankshaft components of V8.
+
+what happens when you type a URL in the address bar in the browser?-->
+<>Browser checks the cache for a DNS record to find the corresponding IP address
+<>If the requested URL is not in the cache, ISP’s DNS server initiates a DNS query to find the IP address of the server that hosts the URL
+<>browser initiates a TCP connection with the server
+<>browser sends an HTTP request to the webserver
+<>server handles the request and sends back a response
+<>server sends out an HTTP response
+<>browser displays the HTML content
+
