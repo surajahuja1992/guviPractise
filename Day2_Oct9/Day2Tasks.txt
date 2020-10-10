@@ -1,0 +1,76 @@
+How do you copy by value a composite data type?
+	<>Two Ways
+		>var arr=[1,2,"hi"];
+		 var arrCopy = arr.slice();
+		 
+		>var arr=[1,2,"hi"];
+		 var arrCopy = [];
+		 for(var i=0;i<arr.length;i++){
+			arrCopy.push(arr[i]);
+		 }
+			
+
+why there is a difference in behavior for copying contents in primitive and non primitive type? 
+	<>In primitive data types, it is copy by value i.e the value of one variable is passed to another variable whereas in case of non primitive data types, it is copy by reference i.e the reference of variabe is passed to another variable meaning and change in either of the variable value will reflect in the all the other variables as well which are reference to each other.
+
+Use typeof in all the datatypes and check the result
+    * typeof(1)
+		Output-->number
+    * typeof(1.1)
+		Output-->number
+    * typeof("1.1")
+		Output-->String
+    * typeof(true)
+		Output-->Boolean
+    * typeof(null)
+		Output-->Object
+    * typeof(undefined)
+		Output-->undefined
+    * typeof([])
+		Output-->Object
+    * typeof({})
+		Output-->Object
+		
+		
+Write a blog about objects and its internal representation in Javascript
+	<> Objects are composite data types in java script. They completely differ from primitive and trivial data types as primitive and trivial data types can store only a single type of data in them whereas in case of objects, they can contain a combination of n types of data . The reason why objects are used widely is becasue of the nature of how data is stored in them .
+	<> Data storage in an object is on KEY:VALUE basis . Every element of a object contains a key and value associated with it. It is a clooection of unordered collection of related data of primitive and trivial type in the form of key and respective values. These keys can be variables or functions and are called properties and methods, respectively.All objects have properties. A property is a “key: value” pair, where a key is a string (also called a “property name”), and value can be anything . An object can contain multiple objects in it. It can even contain an array of objects
+	<> Below is an example of an object:
+		let obj = {"name":"suraj","age":28}
+		Here name and age act as the key which are used to extract the data that stored in the form of value i.e Suraj and 28 . To acces an element of , we use the following : var name = obj.name , herwe we are aacesisng name property of object obj.
+	<> Objects can also be declared using the keyword New as follows:
+		const obj = new Object();
+		And to insert properties to the above element , we write the following code:
+		obj.name = "Suraj";
+
+Execute and see at least 15 cli commands. like mkdir, ls etc.
+	Practised below command:
+	* dir 
+	* cd 
+	* env 
+	* home
+	* copy	
+	* move
+	* type filename	
+	* mkdir 
+	* rmdir 
+	* cls	
+	* exit	
+	* help
+	* cat
+	* cmd
+	* date
+	
+What is the difference between window, screen, and document in Javascript?
+	<> Window object is the top hierarchy of objects in javascript . It contains all the elements present in the browser window as functions and properties . Document and Screen are one of the many objects present inside Window object. /
+	<>Document object contains the actual data which is the be displayed on the browser screen . When a web page is loaded, the browser creates a Document Object Model of the page
+	<>Screen object contains all contents of the user screen . We can use screen object to display screen, width, height etc.
+
+
+JSON task https://medium.com/@reach2arunprakash/guvi-zen-code-sprint-javascript-practice-problems-in-json-objects-and-list-49ac3356a8a5
+	<>Github URL -->
+
+Try the rest countries api
+Extract and print the flag url of all the countries in console. use the html template. 
+https://restcountries.eu/rest/v2/all
+	<>Github URL -->
