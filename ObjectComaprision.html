@@ -1,0 +1,16 @@
+<html>
+<head>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+</head>
+<body>
+   <script>
+      const obj1 = {Name: "Suraj",  Country: "India" };
+      const obj2 = {Country: "India", Name: "Suraj" };
+      document.write("Object 1-->"+JSON.stringify(obj1)+"<br>Object2-->"+ JSON.stringify(obj2));
+      document.write("</br>Comparision by \"===\" --> ");
+      document.write(JSON.stringify(obj1) === JSON.stringify(obj2));
+      document.write("</br>");
+      document.write("Comparision by isEqual method from lodash script --> "+_.isEqual(obj1, obj2));
+   </script>
+</body>
+</html>
