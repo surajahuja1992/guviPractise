@@ -73,4 +73,4 @@ JSON task https://medium.com/@reach2arunprakash/guvi-zen-code-sprint-javascript-
 Try the rest countries api
 Extract and print the flag url of all the countries in console. use the html template. 
 https://restcountries.eu/rest/v2/all
-	<>Github URL -->
+	<>Github URL --> https://github.com/surajahuja1992/guviPractise/blob/BootCamp/allCountries.html
