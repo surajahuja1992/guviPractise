@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+		<script>
+			let requestByName = new XMLHttpRequest;
+			requestByName.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=Nagpur&appid=55aef0e2b40f2e35554f487b0d8aac15', true);
+			requestByName.send();
+			requestByName.onload = function () {
+				let data = JSON.parse(this.response);
+				console.log("By City Name as Nagpur-->"+((data.main.temp)-273.15)+"degree celsius");
+			}
+
+			let requestById = new XMLHttpRequest;
+			requestById.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=1262180&appid=55aef0e2b40f2e35554f487b0d8aac15', true);
+			requestById.send();
+			requestById.onload = function () {
+				let data = JSON.parse(this.response);
+				console.log("By City ID as 1262180-->"+((data.main.temp)-273.15)+"degree celsius");
+			}
+
+			let requestByCoordinate = new XMLHttpRequest;
+			requestByCoordinate.open('GET', 'https://api.openweathermap.org/data/2.5/weather?lat=21.15&lon=79.099998&appid=55aef0e2b40f2e35554f487b0d8aac15', true);
+			requestByCoordinate.send();
+			requestByCoordinate.onload = function () {
+				let data = JSON.parse(this.response);
+				console.log("By coordinates of Nagpur-->"+((data.main.temp)-273.15)+"degree celsius");
+			}
+		</script>
+	</head>
+	<body>
+	
+
+
+	</body>
+</html>
