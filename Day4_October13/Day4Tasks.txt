@@ -1,0 +1,241 @@
+<*>print odd numbers in an array
+let arr = [];
+for (let i = 1; i <= 30; i++){
+    arr.push(i);
+	}
+    
+let str = ["Hello", "World", "How", "are", "You", "I", "am", "fine", "thank", "you"];
+
+	oddNum = (arr) => {
+		let oddArr = [];
+		oddArr = arr.filter(num => num % 2 != 0);
+		console.log(oddArr);
+	}
+
+
+	(function () {
+		let oddArr = [];
+		oddArr = arr.filter(num => num % 2 != 0);
+		console.log(oddArr);
+	})(arr)
+
+
+<*>Convert all the strings to title caps in a string array
+let arr = [];
+for (let i = 1; i <= 30; i++){
+    arr.push(i);
+	}
+    
+let str = ["Hello", "World", "How", "are", "You", "I", "am", "fine", "thank", "you"];
+
+	capsWord = (str) => {
+		let words = [];
+		words = str.map((word) => {
+			return word.toUpperCase()
+		});
+		console.log(words);
+	}
+
+
+	(function () {
+		let words = [];
+		words = str.map((word) => {
+			return word.toUpperCase()
+		});
+		console.log(words);
+	})(str)
+
+
+<*>Sum of all numbers in an array
+let arr = [];
+for (let i = 1; i <= 30; i++){
+    arr.push(i);
+	}
+    
+let str = ["Hello", "World", "How", "are", "You", "I", "am", "fine", "thank", "you"];
+
+	sumNum = (arr) => {
+
+		let res=arr.reduce((sum ,num)=> {return sum+num});
+		console.log(res);
+	}
+
+
+	(function () {
+		console.log(arr.reduce((num ,sum)=> {return sum+num}));
+	})(arr)
+
+
+<*>Return all the prime numbers in an array
+let arr = [];
+for (let i = 1; i <= 30; i++){
+    arr.push(i);
+	}
+    
+let str = ["Hello", "World", "How", "are", "You", "I", "am", "fine", "thank", "you"];
+
+	getPrimes = (arr) => {
+
+		let primes=[];
+		primes=arr.filter((num)=> {
+			let check=true;
+			if(num==1)
+				check=false;
+			for(let i=2;i<num;i++)
+			{
+				if(num%i==0)
+				{
+					check=false;
+					break;
+				}
+			}
+			if(check)
+				return num
+		});
+		console.log(primes);
+	}
+
+
+	(function () {
+		let primes=[];
+		primes=arr.filter((num)=> {
+			let check=true;
+			if(num==1)
+				check=false;
+			for(let i=2;i<num;i++)
+			{
+				if(num%i==0)
+				{
+					check=false;
+					break;
+				}
+			}
+			if(check)
+				return num
+		});
+		console.log(primes);
+	})(arr)
+
+
+<*>Return all the palindromes in an array
+let arr = [];
+for (let i = 1; i <= 30; i++){
+    arr.push(i);
+	}
+    
+let str = ["Hello", "World", "How", "are", "You", "I", "am", "fine", "thank", "you"];
+
+
+	palindrome = (arr) => {
+		let PalindromeNum = [];
+		PalindromeNum = arr.filter(num => { 
+			return num.toString() == num.toString().split('').reverse().join('')
+		});
+		console.log(PalindromeNum);
+	}
+
+	palindrome(arr);
+
+	
+	(function () {
+		let PalindromeNum = [];
+		PalindromeNum = arr.filter(num => { 
+			return num.toString() == num.toString().split('').reverse().join('')
+		});
+		console.log(PalindromeNum);
+	})(arr)
+
+
+<*>Return median of two sorted arrays of same size
+let arr = [];
+for (let i = 1; i <= 30; i++){
+    arr.push(i);
+	}
+    
+let str = ["Hello", "World", "How", "are", "You", "I", "am", "fine", "thank", "you"];
+
+	median = (arr) => {
+		let md = [],len=arr.length;
+		if(len%2!=0)
+		{
+			md=arr[len/2]
+		}
+		else
+		{
+			md=(arr[len/2]+arr[len/2 - 1])/2
+		}
+		console.log(md);
+	}
+
+	median(arr);
+
+	
+	(function () {
+		let md = [],len=arr.length;
+		if(len%2!=0)
+		{
+			md=arr[len/2]
+		}
+		else
+		{
+			md=(arr[len/2]+arr[len/2 - 1])/2
+		}
+		console.log(md);
+	})(arr)
+
+
+<*>Remove duplicates from an array
+
+	let arrDup=["Mike","Matt","Nancy","Adam","Matt","Nancy","Matt","Nancy","Jenny","Nancy","Carl","Mike","Matt","Nancy","Adam","Jenny","Nancy","Carl"];
+	console.log(arrDup);
+
+	removeDuplicates=(array)=>{
+		let uni=[];
+		uni=array.filter(function(item, pos) {
+			return array.indexOf(item) == pos;
+		})
+		console.log(uni);
+	}
+	removeDuplicates(arrDup);
+	
+	(function () {
+		let uni=[];
+		uni=array.filter(function(item, pos) {
+			return array.indexOf(item) == pos;
+		})
+		console.log(uni);
+	})(array)
+	
+	
+<*>Rotate an array by k times and return the rotated array
+
+	let initArr=[1,2,3,4,5];
+
+
+	rotateArray=(arr,k)=>{
+		for(let i=0;i<k;i++)
+		{
+			arr.unshift(arr.pop());
+		}
+	}
+	rotateArray(initArr,2);
+	console.log(initArr);
+
+	
+	let k=6;
+	(function () {
+		
+		let list=[1,2,3,4,5];
+		if(list.length>k)
+		{
+			list.unshift(...list.splice(-k))
+		}
+		else
+		{
+			for(let i=0;i<k;i++)
+			{
+				list.unshift(list.pop());
+			}
+		}
+		console.log(list)
+	})(k)
