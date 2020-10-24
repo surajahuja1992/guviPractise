@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div>
+            <form id="registrationForm" name="registrationForm" onsubmit="return formSubmit()">
+                <table>
+                <tr>
+                    <td colspan="2"><label for="fullName">Full Name</label></td>
+                    <td>
+                        <div class="input-container">
+                            <i class="fa fa-user icon "></i>
+                            <input type="text" class="input-field" id="fullName" name="fullName" placeholder="Full Name"><br>
+                        </div>
+                    </td>
+                </tr>
+                 <div>
+                    <tr>
+                        <td colspan="2"><label for="fullName">Address Line 1</label></td>
+                        <td>
+							<div class="input-container">
+								<i class="fa fa-address-book"></i>
+								<input type="text" class="rightAlign" id="address1" name="address1" placeholder="Address Line 1">
+							</div>
+						</td>
+                    </tr>  
+                <tr>
+                    <td colspan="2"><label for="fullName">Address Line 2</label></td>
+                    <td>
+                        <div class="input-container">
+                            <i class="fa fa-address-book"></i>
+                            <input type="text" class="rightAlign" id="address2" name="address2" placeholder="Address Line 2">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="fullName">City</label></td>
+                    <td>
+                        <div class="input-container">
+                            <i class="fa fa-building icon "></i>
+                            <input type="text" class="rightAlign" id="city" name="city" placeholder="City">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="fullName">State/Province/Region</label></td>
+                    <td>
+                        <div class="input-container">
+                            <i class="fa fa-location-arrow icon "></i>
+                            <input type="text" class="rightAlign" id="state" name="state" placeholder="State/Province/Region">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="fullName">Postal Code/Zip</label></td>
+                    <td>
+                        <div class="input-container">
+                            <i class="fa fa-location-arrow icon"></i>
+                            <input type="text" class="rightAlign" id="zip" name="zip" placeholder="Postal Code/Zip">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="fullName">Country</label></td>
+                    <td>
+                        <div class="input-container">
+                            <i class="fa fa-flag icon "></i>
+                            <input type="text" class="rightAlign" id="country" name="country" placeholder="Country">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="fullName">Email</label></td>
+                    <td>
+                        <div class="input-container">
+                            <i class="fa fa-user icon"></i>
+                            <input type="text" class="rightAlign" id="email" name="email" placeholder="Email">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="fullName">Phone Number</label></td>
+                    <td>
+                        <div class="input-container">
+                            <i class="fa fa-phone icon "></i>
+                            <input type="text" id="phoneNo" name="phoneNo" placeholder="Phone Number"><br>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="submitBtn">
+                    <td colspan="300"><input type="submit" value="Submit" id="submitBtnId" > </td>
+                </tr>   
+                </table>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
