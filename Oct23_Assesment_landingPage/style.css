@@ -1,0 +1,54 @@
+body{
+    
+}
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+}
+#masterDiv{
+    width: 60%;
+    margin: auto;
+    background-color: rgb(181, 220, 223)
+}
+table{
+    width: 50%;
+    margin: auto;
+}
+#sec1{
+    padding: 3px;
+    text-align: center;
+    background-color: rgb(138, 176, 179);
+}
+#signUpBtn{
+    background-color: green;
+}
+#launchDemoBtn{
+    margin-top: 5px;
+    background-color: blue;
+}
+.rightAlign{
+   float: right;
+}
+#homeBtn{
+    background-color: blue;
+}
+h4{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.rightMargin{
+    margin-right: 3px;
+}
+p{
+    margin-top: 0;
+}
+#aboutBtn, #contactBtn{
+    background-color: rgb(181, 220, 223);
+    color: blue;
+}
