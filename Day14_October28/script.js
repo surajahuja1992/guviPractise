@@ -1,6 +1,4 @@
 let master = document.getElementById('master');
-
-function createTimer() {
     setTimeout(function () {
         setTimeout(function () {
             setTimeout(function () {
@@ -36,7 +34,5 @@ function createTimer() {
         master.innerHTML = 9;
     }, 1500);
     master.innerHTML = 10;
-
-}
 
 createTimer();
